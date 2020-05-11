@@ -2,6 +2,21 @@
   "compilerOptions": {
     "declaration": true,
     "baseUrl": ".",
+    "paths": {
+      "utils/*": [
+        "include/utils/*"
+      ],
+      "stylesheets": [
+        "stylesheets/"
+      ],
+      "examples": [
+        "examples/"
+      ]
+    },
+    "rootDirs": [
+      "include"
+    ],
+    "outDir": "dist",
     "module": "esnext",
     "target": "es5",
     "lib": [
@@ -24,7 +39,14 @@
     "noUnusedLocals": true,
     "esModuleInterop": true
   },
-  "include": [],
+  "include": [
+    "examples.tsx",
+    "lib/**/*",
+    "include/**/*",
+    "examples/**/*",
+    "types/**/*",
+    "test/**/*",
+  ],
   "exclude": [
     "node_modules",
     "build",
