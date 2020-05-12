@@ -1,6 +1,9 @@
 {
   "name": "ryoko-ui-react",
-  "version": "1.0.0",
+  "version": "0.0.2",
+  "files": [
+    "/dist"
+  ],
   "description": "",
   "main": "dist/lib/index.js",
   "types": "dist/lib/index",
