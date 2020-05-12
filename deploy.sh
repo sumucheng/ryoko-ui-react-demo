@@ -1,1 +1,3 @@
-npm version patch
+npm version patch 
+git push
+npm publish
