@@ -1,7 +1,7 @@
 import React, { ButtonHTMLAttributes } from 'react'
 import './button.scss'
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-    level?: 'default' | "primary" | "warning" | "error"
+    level?: 'default' | "primary" | "success" | "danger"
     size?: string
     plain?: boolean
     disabled?: boolean
