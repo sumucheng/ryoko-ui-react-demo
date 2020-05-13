@@ -19,30 +19,30 @@
     }
     &-header{
         font-size: 16px;
-    color: #333;
-    margin-bottom: 26px;
+        color: #333;
+        margin-bottom: 26px;
     }
     &-close{
         position: absolute;
-    top: 20px;
-    right: 20px;
-    padding: 0;
-    background: transparent;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    font-size: 16px;
-    .r-icon{
-        height: .8em;
-    width: .8em;
-    }
+        top: 20px;
+        right: 20px;
+        padding: 0;
+        background: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-size: 16px;
+        .r-icon{
+            height: .8em;
+            width: .8em;
+        }
     }
     &-content{
         color: #5f5f5f;
-    line-height: 22px;
+        line-height: 22px;
     }
     &-footer{
         margin-top: 36px;
-    text-align: right;
+        text-align: right;
     }
 }
