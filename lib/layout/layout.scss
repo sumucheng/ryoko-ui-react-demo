@@ -1,0 +1,19 @@
+@import  '../index.scss';
+@import './demo.scss';
+.r-layout {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    &.hasSider {
+      flex-direction: row;
+    }
+    .r-footer {
+        height: 60px;
+    }
+    .r-content {
+        flex-grow: 1;
+    }
+    .r-sider {
+        width: 300px;
+    }
+  }
