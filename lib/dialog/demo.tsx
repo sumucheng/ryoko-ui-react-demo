@@ -1,6 +1,6 @@
 import React, { useState, MouseEventHandler } from 'react'
 import Dialog, { alert, confirm } from './dialog'
-import Button from 'lib/button'
+import Button from 'lib/button/button'
 
 export default function () {
     const [visible, setVisible] = useState(false)
