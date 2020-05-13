@@ -2,6 +2,7 @@ import React, { Fragment, MouseEventHandler, ReactElement } from 'react'
 import ReactDOM from 'react-dom'
 import './dialog.scss'
 import Icon from '../icon/icon'
+import Button from '../button/button'
 interface DialogProps {
     visible: boolean;
     title?: string;
@@ -80,10 +81,10 @@ interface AlertOrConfirmProps {
 
 const alert = (props: AlertOrConfirmProps) => {
     const buttons = [
-        <button onClick={e => {
+        <Button onClick={e => {
             closeDialog()
             props.onConfirm && props.onConfirm(e)
-        }}>知道了</button>
+        }}>知道了</Button>
     ]
     const closeDialog = modal({
         buttons,
@@ -94,14 +95,14 @@ const alert = (props: AlertOrConfirmProps) => {
 }
 const confirm = (props: AlertOrConfirmProps) => {
     const buttons = [
-        <button onClick={e => {
+        <Button onClick={e => {
             closeDialog()
             props.onCancel && props.onCancel(e)
-        }}>取消</button>,
-        <button onClick={e => {
+        }}>取 消</Button>,
+        <Button onClick={e => {
             closeDialog()
             props.onConfirm && props.onConfirm(e)
-        }}>确认</button>
+        }}>确 认</Button>
     ]
     const closeDialog = modal({
         buttons,
