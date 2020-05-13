@@ -1,7 +1,6 @@
 import React, { Fragment, MouseEventHandler, ReactElement } from 'react'
 import ReactDOM from 'react-dom'
 import './dialog.scss'
-import '../index.scss'
 import Icon from '../icon/icon'
 interface DialogProps {
     visible: boolean;
@@ -19,10 +18,9 @@ const Dialog: React.FunctionComponent<DialogProps> = (props) => {
         <Fragment>
             <div className="r-dialog-mask" onClick={handleClickMask}></div>
             <div className="r-dialog">
-                {props.title &&
-                    <div className="r-dialog-header">{props.title}</div>}
+                {props.title && <div className="r-dialog-header">{props.title}</div>}
                 {props.showClose &&
-                    <div className="r-dialog-close" onClick={props.closeDialog}>
+                    <div className="r-dialog-close" onClick={e => props.closeDialog(e)}>
                         <Icon name="close" />
                     </div>
                 }
@@ -37,9 +35,8 @@ const Dialog: React.FunctionComponent<DialogProps> = (props) => {
                     </div>}
             </div>
         </Fragment>
-    return (
-        ReactDOM.createPortal(props.visible && dialog, document.body)
-    )
+    return ReactDOM.createPortal(props.visible && dialog, document.body)
+
 }
 Dialog.defaultProps = {
     title: '',
@@ -47,22 +44,19 @@ Dialog.defaultProps = {
     showClose: true,
     closeOnClickMask: true,
 }
-interface AlertProps {
+interface ModalProps {
     title?: string;
+    buttons?: Array<ReactElement>;
     content: string;
-    onConfirm?: Function;
+    showClose?: boolean
 }
-const alert = (props: AlertProps) => {
+const modal = (props: ModalProps) => {
     const component =
         <Dialog
             visible={true}
-            showClose={false}
-            buttons={[
-                <button onClick={() => {
-                    closeDialog()
-                    props.onConfirm && props.onConfirm()
-                }}>知道了</button>
-            ]}
+            title={props.title}
+            showClose={props.showClose}
+            buttons={props.buttons}
             closeDialog={() => { closeDialog() }}>
             {props.content}
         </Dialog>
@@ -74,7 +68,46 @@ const alert = (props: AlertProps) => {
     }
     document.body.append(div)
     ReactDOM.render(component, div)
+    return closeDialog
 }
 
-export { alert }
+interface AlertOrConfirmProps {
+    title?: string;
+    content: string;
+    onConfirm?: React.MouseEventHandler;
+    onCancel?: React.MouseEventHandler;
+}
+
+const alert = (props: AlertOrConfirmProps) => {
+    const buttons = [
+        <button onClick={e => {
+            closeDialog()
+            props.onConfirm && props.onConfirm(e)
+        }}>知道了</button>
+    ]
+    const closeDialog = modal({
+        buttons,
+        content: props.content,
+        title: props.title,
+        showClose: false
+    });
+}
+const confirm = (props: AlertOrConfirmProps) => {
+    const buttons = [
+        <button onClick={e => {
+            closeDialog()
+            props.onCancel && props.onCancel(e)
+        }}>取消</button>,
+        <button onClick={e => {
+            closeDialog()
+            props.onConfirm && props.onConfirm(e)
+        }}>确认</button>
+    ]
+    const closeDialog = modal({
+        buttons,
+        content: props.content,
+        title: props.title
+    });
+}
+export { alert, confirm }
 export default Dialog
