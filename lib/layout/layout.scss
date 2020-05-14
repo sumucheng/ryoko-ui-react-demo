@@ -1,10 +1,10 @@
 @import  '../index.scss';
-@import './demo.scss';
+
 .r-layout {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    &.hasSider {
+    &.r-layout-hasSider {
       flex-direction: row;
     }
     .r-footer {
