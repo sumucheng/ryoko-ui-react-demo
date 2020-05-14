@@ -1,0 +1,23 @@
+.container{
+    header{
+        border-bottom: 1px solid rgba(17,107,251,.08);;
+        padding: 40px;
+        >span{
+            font-size: 28px;
+            color: #0161FB;      
+            
+        }
+    }
+    
+    .demo{
+        padding:40px;
+        .item{
+            background: #FFFFFF;
+            box-shadow: 0 2px 14px 0 rgba(0,0,0,0.10);
+            border-radius: 4px;
+            padding: 24px;
+            margin-bottom: 24px;
+        }
+    }
+    
+}

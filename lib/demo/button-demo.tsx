@@ -1,6 +1,7 @@
 import React from 'react'
-import Button from './button'
-
+import Button from '../button/button'
+import DemoTemplate from './demoTemp'
+import './demo.scss'
 export default function () {
     return (
         <div>
