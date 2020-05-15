@@ -1,14 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './example.scss'
-import { HashRouter, Route, Link } from 'react-router-dom'
+import { HashRouter, Route, NavLink } from 'react-router-dom'
 
-import { Layout, Header, Content, Sider, Footer } from './lib/layout/layout'
+import { Layout, Header, Content, Sider } from './lib/layout/layout'
 
 import IconDemo from './lib/demo/icon-demo'
 import DialogDemo from './lib/demo/dialog-demo'
 import ButtonDemo from './lib/demo/button-demo'
 import LayoutDemo from './lib/demo/layout-demo'
+
 const list = [
     { link: '/icon', name: 'Icon', component: IconDemo },
     { link: '/dialog', name: 'Dialog', component: IconDemo },
@@ -17,7 +18,7 @@ const list = [
 ]
 ReactDOM.render(
     <HashRouter>
-        <Layout>
+        <Layout className="demo-container">
             <Header style={{ height: 60 }}>
                 <span>Ryoko UI</span>
                 <a href="https://github.com/sumucheng/ryoko-ui-react-demo" >GitHub</a>
@@ -25,8 +26,8 @@ ReactDOM.render(
             <Layout>
                 <Sider style={{ width: 200 }}>
                     <ul>
-                        {list.map(i =>
-                            <li><Link to={i.link}>{i.name}</Link></li>
+                        {list.map((i, index) =>
+                            <li key={index}><NavLink to={i.link}>{i.name}</NavLink></li>
                         )}
                     </ul>
                 </Sider>

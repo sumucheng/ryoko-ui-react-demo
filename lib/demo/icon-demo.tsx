@@ -6,6 +6,7 @@ export default function () {
     return (
         <DemoTemplate
             header="Icon 图标"
+            className="icon"
             items={[<Icon name="close" />]}
         >
         </DemoTemplate>

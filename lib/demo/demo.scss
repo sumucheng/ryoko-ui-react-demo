@@ -15,9 +15,45 @@
             background: #FFFFFF;
             box-shadow: 0 2px 14px 0 rgba(0,0,0,0.10);
             border-radius: 4px;
-            padding: 24px;
-            margin-bottom: 24px;
+            padding: 30px;
+            margin-bottom: 40px;
+        }
+        pre .token{
+            font-family:Consolas, 'Courier New', monospace;
         }
     }
-    
+    &.layout{
+        .item{
+            .r-layout {
+              &:last-child {
+                margin-bottom: 0;
+              }
+            }
+            .r-header,
+            .r-footer {
+              background-color: #b3c0d1;
+              color: #333;
+              text-align: center;
+              line-height: 60px;
+            }
+            .r-sider {
+              background-color: #d3dce6;
+              color: #333;
+              text-align: center;
+              line-height: 150px;
+            }
+            .r-content {
+              background-color: #e9eef3;
+              color: #333;
+              text-align: center;
+              line-height: 150px;
+            }
+          }
+          
+    }
+    &.button{
+        .r-button{
+            margin-right: 30px;
+        }
+    }
 }

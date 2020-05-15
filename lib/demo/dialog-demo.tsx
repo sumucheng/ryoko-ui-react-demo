@@ -23,6 +23,7 @@ export default function () {
     return (
         <DemoTemplate
             header="Dialog 对话框"
+            className="dialog"
             items={[
                 <Fragment>
                     <Button onClick={() => setVisible(true)}>click me</Button>

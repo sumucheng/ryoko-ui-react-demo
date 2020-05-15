@@ -1,13 +1,15 @@
 import React, { ReactElement } from 'react'
 
 import './demo.scss'
+
 interface DemoTemplateProps extends React.HTMLAttributes<HTMLElement> {
     header: string,
     items: Array<ReactElement>
 }
 const DemoTemplate: React.FunctionComponent<DemoTemplateProps> = (props) => {
+    const { className, ...rest } = props
     return (
-        <div className="container">
+        <div className={`container ${className}`} {...rest}>
             <header>
                 <span>{props.header}</span>
             </header>
@@ -15,6 +17,7 @@ const DemoTemplate: React.FunctionComponent<DemoTemplateProps> = (props) => {
                 {props.items.map((item, index) =>
                     <div className="item" key={index}>
                         {item}
+
                     </div>
                 )}
 

@@ -6,12 +6,12 @@ import Header from '../layout/header'
 import Sider from '../layout/sider'
 import DemoTemplate from './demoTemp'
 
-import './layout-demo.scss';
 import './demo.scss'
 export default function () {
     return (
         <DemoTemplate
             header="Layout 布局"
+            className="layout"
             items={[
                 <Fragment>
                     <Layout style={{ marginBottom: 30 }}>
