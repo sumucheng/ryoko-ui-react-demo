@@ -18,8 +18,12 @@
             padding: 30px;
             margin-bottom: 40px;
         }
-        pre .token{
+        pre 
+        {
+            .token{
             font-family:Consolas, 'Courier New', monospace;
+      
+            }
         }
     }
     &.layout{
