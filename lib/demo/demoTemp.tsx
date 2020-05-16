@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react'
-import Code from './demo-code'
+import Code from "./demo-code"
 import './demo.scss'
 
 interface DemoTemplateProps extends React.HTMLAttributes<HTMLElement> {
