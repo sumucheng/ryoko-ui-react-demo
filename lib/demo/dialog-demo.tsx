@@ -25,30 +25,40 @@ export default function () {
             header="Dialog 对话框"
             className="dialog"
             items={[
-                <Fragment>
-                    <Button onClick={() => setVisible(true)}>click me</Button>
-                    <Dialog
-                        visible={visible}
-                        title="提示"
-                        buttons={buttons}
-                        closeDialog={() => setVisible(false)}
-                    >您确定要删除该标签吗？删除后现有的推荐列表页将清空。</Dialog>
-                </Fragment>,
-                <Fragment>
-                    <Button onClick={() => alert({
-                        title: '确认删除',
-                        content: '您确定要删除该标签吗？删除后现有的推荐列表页将清空。',
-                        onConfirm: () => { console.log('知道了') },
-                    })}>click</Button>
-                </Fragment>,
-                <Fragment>
-                    <Button onClick={() => confirm({
-                        title: '确认删除',
-                        content: '您确定要删除该标签吗？删除后现有的推荐列表页将清空。',
-                        onConfirm: () => { console.log('确认') },
-                        onCancel: () => { console.log('取消') }
-                    })}>click</Button>
-                </Fragment>
+                {
+                    demo: <Fragment>
+                        <Button onClick={() => setVisible(true)}>click me</Button>
+                        <Dialog
+                            visible={visible}
+                            title="提示"
+                            buttons={buttons}
+                            closeDialog={() => setVisible(false)}
+                        >您确定要删除该标签吗？删除后现有的推荐列表页将清空。</Dialog>
+                    </Fragment>,
+                    code: '',
+                },
+
+                {
+                    demo: < Fragment >
+                        <Button onClick={() => alert({
+                            title: '确认删除',
+                            content: '您确定要删除该标签吗？删除后现有的推荐列表页将清空。',
+                            onConfirm: () => { console.log('知道了') },
+                        })}>click</Button>
+                    </Fragment >,
+                    code: ''
+                },
+                {
+                    demo: <Fragment>
+                        <Button onClick={() => confirm({
+                            title: '确认删除',
+                            content: '您确定要删除该标签吗？删除后现有的推荐列表页将清空。',
+                            onConfirm: () => { console.log('确认') },
+                            onCancel: () => { console.log('取消') }
+                        })}>click</Button>
+                    </Fragment>,
+                    code: ''
+                }
             ]}>
         </DemoTemplate>
     )

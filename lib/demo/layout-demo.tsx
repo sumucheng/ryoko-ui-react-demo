@@ -13,32 +13,35 @@ export default function () {
             header="Layout 布局"
             className="layout"
             items={[
-                <Fragment>
-                    <Layout style={{ marginBottom: 30 }}>
-                        <Header>Header</Header>
-                        <Layout>
-                            <Sider>Sider</Sider>
-                            <Content>Content</Content>
-                        </Layout>
-                        <Footer>Footer</Footer>
-                    </Layout>
-                    <Layout style={{ marginBottom: 30 }}>
-                        <Header>Header</Header>
-                        <Layout>
-                            <Sider>Sider</Sider>
-                            <Content>Content</Content>
-                        </Layout>
-                        <Footer>Footer</Footer>
-                    </Layout>
-                    <Layout>
-                        <Sider>Sider</Sider>
-                        <Layout>
+                {
+                    demo: <Fragment>
+                        <Layout style={{ marginBottom: 30 }}>
                             <Header>Header</Header>
-                            <Content>Content</Content>
+                            <Layout>
+                                <Sider>Sider</Sider>
+                                <Content>Content</Content>
+                            </Layout>
                             <Footer>Footer</Footer>
                         </Layout>
-                    </Layout>
-                </Fragment>
+                        <Layout style={{ marginBottom: 30 }}>
+                            <Header>Header</Header>
+                            <Layout>
+                                <Sider>Sider</Sider>
+                                <Content>Content</Content>
+                            </Layout>
+                            <Footer>Footer</Footer>
+                        </Layout>
+                        <Layout>
+                            <Sider>Sider</Sider>
+                            <Layout>
+                                <Header>Header</Header>
+                                <Content>Content</Content>
+                                <Footer>Footer</Footer>
+                            </Layout>
+                        </Layout>
+                    </Fragment>,
+                    code: ''
+                }
 
             ]}
         >

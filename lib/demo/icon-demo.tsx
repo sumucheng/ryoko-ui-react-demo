@@ -7,7 +7,10 @@ export default function () {
         <DemoTemplate
             header="Icon 图标"
             className="icon"
-            items={[<Icon name="close" />]}
+            items={[{
+                demo: <Icon name="close" />,
+                code: ''
+            }]}
         >
         </DemoTemplate>
     )
