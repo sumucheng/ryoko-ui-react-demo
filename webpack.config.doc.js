@@ -11,8 +11,9 @@ module.exports = Object.assign({}, base, {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'ryoko-ui',
-            template: "example.html"
+            title: 'ryoko-ui-react',
+            template: "example.html",
+            filename: 'index.html'
         })
     ],
 })
