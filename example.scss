@@ -41,18 +41,40 @@ button, input{
         align-items: center;
         justify-content: space-between;
         padding: 0 50px;
-        border-bottom: 1px solid #D3D3D3;;
+        border-bottom: 1px solid #eaecef;;
         span{
             font-size: 20px;
         }
     }
     >.r-sider{
-        border-right: 1px solid #D3D3D3;;
-        li>a{
+        border-right: 1px solid #eaecef;
+        .sidebar{
+            .sidebar-header{
+                font-family: PingFangSC-Regular;
+                font-size: 15px;
+                color: #222222;
+                line-height: 54px;
+                background-color: white;
+                padding-left: 76px;
+                position: relative;
+                .r-icon{
+                    position:absolute;
+                    top:50%;
+                    left: 42px;
+                    width: 1.2em;
+                    height: 1.2em;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+        
+        li{
+            background: rgb(248, 250, 255);
+            a{
                 line-height: 54px;
                 font-size: 15px;
                 color: #888888;
-                padding-left: 50px;
+                padding-left: 76px;
                 display: inline-block;
                 width: 100%;
                 font-family: PingFangSC-Regular;
@@ -63,7 +85,8 @@ button, input{
                     background: #DAE8FF;
                     color: #0161FB;
                 }
-            }      
+            }   
+        }   
     }
     >.r-content{
         

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="基础" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="按钮" transform="translate(-42.000000, -299.000000)">
+            <g id="编组">
+                <g id="Group-3-Copy-3" transform="translate(0.000000, 282.000000)">
+                    <g id="Group-2" transform="translate(40.000000, 15.000000)">
+                        <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+                        <g id="Group-4" transform="translate(12.000000, 12.000000) rotate(-90.000000) translate(-12.000000, -12.000000) translate(2.000000, 2.000000)">
+                            <path d="M0,0 L10,0 C15.5228475,-1.01453063e-15 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 L0,20 L0,20 L0,0 Z" id="Rectangle" fill="#B3CFFF" transform="translate(10.000000, 10.000000) rotate(-270.000000) translate(-10.000000, -10.000000) "></path>
+                            <path d="M7,9 L12,9 C12.5522847,9 13,9.44771525 13,10 C13,10.5522847 12.5522847,11 12,11 L7,11 L7,11 L7,9 Z" id="Rectangle" fill="#0062FE" transform="translate(10.000000, 10.000000) rotate(-270.000000) translate(-10.000000, -10.000000) "></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

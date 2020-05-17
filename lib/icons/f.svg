@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="20px" viewBox="0 0 18 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="基础" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="按钮" transform="translate(-43.000000, -407.000000)">
+            <g id="编组">
+                <g id="Group-3-Copy-5" transform="translate(0.000000, 390.000000)">
+                    <g id="Group-2" transform="translate(40.000000, 15.000000)">
+                        <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+                        <g id="Group-4" transform="translate(3.000000, 2.000000)">
+                            <path d="M18,12.6315789 L8,12.6315789 C6.8954305,12.6315789 6,13.5270094 6,14.6315789 L6,14.6315789 L6,20 L0,20 L0,0 L18,0 L18,12.6315789 Z" id="Combined-Shape" fill="#B3CFFF"></path>
+                            <path d="M7,5 L18,5 L18,5 L18,7 L7,7 C6.44771525,7 6,6.55228475 6,6 C6,5.44771525 6.44771525,5 7,5 Z" id="Rectangle" fill="#0062FE"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

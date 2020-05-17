@@ -1,6 +1,6 @@
 .container{
     header{
-        border-bottom: 1px solid rgba(17,107,251,.08);;
+        border-bottom: 1px solid #eaecef;
         padding: 40px;
         >span{
             font-size: 28px;
@@ -41,6 +41,20 @@
             }
         }
         
+    }
+    &.install,&.quick{
+        padding:40px;
+        line-height: 2;
+        h2{
+            font-weight: normal;          
+        }
+        pre{
+            padding:18px 24px;
+            font-size: 12px;
+            .token{
+                font-family:Menlo,Monaco,Consolas, 'Courier New', monospace;                 
+            }
+        }
     }
     &.layout{
         .item{

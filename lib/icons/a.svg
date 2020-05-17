@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="21px" viewBox="0 0 20 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>1</title>
+    <desc>Created with Sketch.</desc>
+    <g id="基础" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="按钮" transform="translate(-42.000000, -137.000000)">
+            <g id="编组">
+                <g id="Group-3" transform="translate(0.000000, 120.000000)">
+                    <g id="1" transform="translate(40.000000, 15.000000)">
+                        <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+                        <path d="M12.9103665,3.00280625 L21.3573623,21.5861971 C21.5858994,22.0889786 21.3635803,22.6818294 20.8607988,22.9103665 C20.7308432,22.9694372 20.5897467,23 20.4469958,23 L3.55300418,23 C3.00071943,23 2.55300418,22.5522847 2.55300418,22 C2.55300418,21.8572491 2.58356697,21.7161527 2.6426377,21.5861971 L11.0896335,3.00280625 C11.3181706,2.50002473 11.9110214,2.27770566 12.4138029,2.50624272 C12.6339108,2.60629176 12.8103174,2.78269835 12.9103665,3.00280625 Z" id="Triangle" fill="#B3CFFF"></path>
+                        <rect id="Rectangle" fill="#0062FE" x="8" y="16" width="8" height="2" rx="1"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
