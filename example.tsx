@@ -12,11 +12,11 @@ import DialogDemo from './lib/demo/dialog-demo'
 import ButtonDemo from './lib/demo/button-demo'
 import LayoutDemo from './lib/demo/layout-demo'
 
-
 const list = [
     {
         name: '开始 Start',
         icon: 'a',
+        open: false,
         child: [
             { link: '/install', name: 'Install' },
             { link: '/quick', name: 'Quick' },
@@ -25,6 +25,7 @@ const list = [
     {
         name: '组件 Component',
         icon: 'b',
+        open: false,
         child: [
             { link: '/icon', name: 'Icon' },
             { link: '/dialog', name: 'Dialog' },
@@ -45,13 +46,15 @@ ReactDOM.render(
                     <ul>
                         {list.map((i, index) =>
                             i.child ?
-                                <li className="sidebar">
-
+                                <li className="sidebar" onClick={() => {
+                                    i.open = !i.open
+                                    console.log(i.open)
+                                }}>
                                     <p className="sidebar-header">
                                         <Icon name={i.icon} />
                                         {i.name}
                                     </p>
-                                    {i.child.map((j, index) =>
+                                    {i.open && i.child.map((j, index) =>
                                         <li key={index}><NavLink to={j.link}>{j.name}</NavLink></li>
                                     )}
                                 </li> : null
